@@ -1,4 +1,4 @@
-{% set version = '0.5.4' %}
+{% set version = "0.5.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dlookr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dlookr/dlookr_{{ version }}.tar.gz
-  sha256: 3d15579da9614e51eb8cba7758c7933c37ba9def02de1b698acb59f9d74e5c63
+  sha256: 5321bce6babcacbb82ff27a33ea57f3ca6dddd587b75b848a9cae021d955ec5c
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -77,15 +77,9 @@ test:
 about:
   home: https://github.com/choonghyunryu/dlookr/, https://choonghyunryu.github.io/dlookr/
   license: GPL-2.0-only
-  summary: A collection of tools that support data diagnosis, exploration, and transformation.
-    Data diagnostics provides information and visualization of missing values and outliers
-    and unique and negative values to help you understand the distribution and quality
-    of your data. Data exploration provides information and visualization of the descriptive
-    statistics of univariate variables, normality tests and outliers, correlation of
-    two variables, and relationship between target variable and predictor. Data transformation
-    supports binning for categorizing continuous variables, imputates missing values
-    and outliers, resolving skewness. And it creates automated reports that support
-    these three tasks.
+  summary: A collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and unique and negative values to help you understand the distribution and quality of your data. Data exploration provides information and visualization
+    of the descriptive statistics of univariate variables, normality tests and outliers, correlation of two variables, and relationship between target variable and predictor. Data transformation supports binning for categorizing continuous variables, imputates missing values and outliers, resolving skewness. And it creates
+    automated reports that support these three tasks.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
