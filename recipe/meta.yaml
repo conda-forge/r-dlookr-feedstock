@@ -1,4 +1,4 @@
-{% set version = "0.5.6" %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dlookr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dlookr/dlookr_{{ version }}.tar.gz
-  sha256: 1c06c87166f5db57819b567998bf5972ccef4b59d5b4c5ddc982228501327095
+  sha256: 3caff1b22c07c2229c913cc83a0858fe89b03050321ae613a6589c3b151b3c44
 
 build:
   merge_build_host: true  # [win]
