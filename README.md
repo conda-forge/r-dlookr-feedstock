@@ -3,11 +3,13 @@ About r-dlookr-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dlookr-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/choonghyunryu/dlookr/, https://choonghyunryu.github.io/dlookr/
+Home: https://choonghyunryu.github.io/dlookr/
 
 Package license: GPL-2.0-only
 
 Summary: A collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and unique and negative values to help you understand the distribution and quality of your data. Data exploration provides information and visualization of the descriptive statistics of univariate variables, normality tests and outliers, correlation of two variables, and relationship between target variable and predictor. Data transformation supports binning for categorizing continuous variables, imputates missing values and outliers, resolving skewness. And it creates automated reports that support these three tasks.
+
+Development: https://github.com/choonghyunryu/dlookr/
 
 Current build status
 ====================
