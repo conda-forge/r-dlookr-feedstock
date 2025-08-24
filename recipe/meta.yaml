@@ -1,4 +1,4 @@
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dlookr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dlookr/dlookr_{{ version }}.tar.gz
-  sha256: a67f3afd06853a4244eab724028a3416178af7caf06676da4a7b4b764d30ee10
+  sha256: 4cc62e7e772a8354b1bce688e535e822d45b7cfc7cfc2e4cc9ad938d993dbed9
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
